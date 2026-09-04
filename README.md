@@ -383,7 +383,7 @@ gm-id-lookup-table-cadence-180nm/
 │   └── lookup_table.xlsx
 │
 └── report/
-    └── Assignment_2_CMOS.pdf
+    └── GM_ID_Lookup_Table_180nm_CMOS_Cadence_Virtuoso.pdf
 ```
 
 ---
