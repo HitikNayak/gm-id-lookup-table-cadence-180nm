@@ -23,9 +23,9 @@ To develop a **$g_m/I_D$ lookup table using 180 nm CMOS technology** for calcula
 | EDA Tool             | Cadence Virtuoso               |
 | Simulation Tool      | Cadence ADE L                  |
 | CMOS Technology      | 180 nm                         |
-| Channel Length \(L\) | 180 nm                         |
-| \(V_{DS}\) Sweep     | 0 V – 1.8 V                    |
-| Width \(W\) Sweep    | 400 nm – 2 µm                  |
+| Channel Length (L) | 180 nm                         |
+| $V_{DS}$ Sweep     | 0 V – 1.8 V                    |
+| Width W Sweep    | 400 nm – 2 µm                  |
 | DC Sweep Step        | 10 mV                          |
 | Main Analysis        | DC Analysis + Parametric Sweep |
 
@@ -60,7 +60,7 @@ These lookup curves can be used to:
 
 ## 2.1 MOSFET Transconductance
 
-The transconductance \(g_m\) indicates how effectively the gate voltage controls the drain current \(I_D\).
+The transconductance $g_m$ indicates how effectively the gate voltage controls the drain current $I_D$.
 
 It is defined as
 
@@ -98,7 +98,7 @@ The overdrive voltage represents the amount by which the gate-to-source voltage 
 
 ## 2.3 $g_m/I_D$ Ratio
 
-The g_m/I_D ratio is defined as
+The $g_m/I_D$ ratio is defined as
 
 $$
 \boxed{\frac{g_m}{I_D}}
