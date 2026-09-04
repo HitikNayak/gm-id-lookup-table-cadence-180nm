@@ -73,8 +73,8 @@ $$
 
 where:
 
-* \(V_{GS}\) = Gate-to-source voltage
-* \(V_{TH}\) = Threshold voltage
+* V_{GS} = Gate-to-source voltage
+* V_{TH} = Threshold voltage
 
 ### gm/ID
 
