@@ -360,7 +360,7 @@ The corresponding transistor operating point obtained from the simulation is sho
 The obtained $g_m/I_D$ value is verified using
 
 $$
-\frac{g_m}{I_D}
+$g_m/I_D$
 =
 \frac{52.4~\mu\mathrm{S}}{3.46~\mu\mathrm{A}}
 \approx 15.17~\mathrm{V^{-1}}
