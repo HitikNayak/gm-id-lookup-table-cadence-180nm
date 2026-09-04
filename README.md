@@ -429,17 +429,17 @@ closely matches the target value of $15~\mathrm{V^{-1}}$.
 
 The major observations from the simulation are:
 
-* The \(g_m/I_D\) ratio decreases with increasing \(V_{OV}\).
-* The \(g_m/I_D\) lookup curve can be used to identify a suitable operating point.
-* The \(I_D/W\) parameter provides information useful for transistor sizing.
-* Parametric sweeps of \(V_{DS}\) and \(W\) allow the transistor characteristics to be studied under different operating conditions.
+* The $g_m/I_D$ ratio decreases with increasing $V_{OV}$.
+* The $g_m/I_D$ lookup curve can be used to identify a suitable operating point.
+* The $I_D/W$ parameter provides information useful for transistor sizing.
+* Parametric sweeps of $V_{DS}$ and W allow the transistor characteristics to be studied under different operating conditions.
 * The generated lookup curves provide a systematic approach to MOS transistor sizing.
 
 ---
 
 # 11. Applications
 
-The \(g_m/I_D\) lookup-table methodology can be applied to:
+The $g_m/I_D$ lookup-table methodology can be applied to:
 
 * Analog CMOS circuit design
 * MOS transistor sizing
@@ -494,9 +494,9 @@ gm-id-lookup-table-cadence-180nm/
 
 # 14. Result
 
-The \(g_m/I_D\) lookup curves were successfully generated using **Cadence Virtuoso with 180 nm CMOS technology**.
+The $g_m/I_D$ lookup curves were successfully generated using **Cadence Virtuoso with 180 nm CMOS technology**.
 
-The channel length was fixed at 180 nm, while \(V_{DS}\) and transistor width \(W\) were varied using parametric sweeps. The resulting plots of
+The channel length was fixed at 180 nm, while $V_{OV}$ and transistor width W were varied using parametric sweeps. The resulting plots of
 
 $$
 \frac{g_m}{I_D}\ \text{vs.}\ V_{OV}
@@ -514,11 +514,11 @@ were obtained using a DC sweep step of 10 mV.
 
 # 15. Conclusion
 
-A \(g_m/I_D\)-based lookup table was successfully developed using **Cadence Virtuoso and 180 nm CMOS technology**.
+A $g_m/I_D$-based lookup table was successfully developed using **Cadence Virtuoso and 180 nm CMOS technology**.
 
 The simulation results demonstrate that the lookup curves can be used to select a suitable MOS transistor bias point and determine the required transistor width.
 
-Therefore, the \(g_m/I_D\) methodology provides a useful and systematic approach for **MOS transistor characterization, operating-point selection, and transistor sizing in analog CMOS circuit design**.
+Therefore, the $g_m/I_D$ methodology provides a useful and systematic approach for **MOS transistor characterization, operating-point selection, and transistor sizing in analog CMOS circuit design**.
 
 ---
 
