@@ -271,7 +271,7 @@ $$
 \boxed{\frac{g_m}{I_D}\ \text{vs.}\ V_{OV}}
 $$
 
-![gm/ID vs VOV](images/gm_id_vs_vov.png)
+![gm/ID vs VOV](results/gm_id_vs_vov.png)
 
 **Figure 4:** Variation of \(g_m/I_D\) with overdrive voltage \(V_{OV}\).
 
@@ -293,7 +293,7 @@ $$
 \boxed{\frac{g_m}{I_D}\ \text{vs.}\ \frac{I_D}{W}}
 $$
 
-![gm/ID vs ID/W](images/gm_id_vs_id_w.png)
+![gm/ID vs ID/W](results/gm_id_vs_id_w.png)
 
 **Figure 5:** \(g_m/I_D\) plotted against normalized drain current \(I_D/W\).
 
