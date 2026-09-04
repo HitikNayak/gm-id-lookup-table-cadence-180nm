@@ -231,7 +231,7 @@ $$
 
 with six sweep points for each parameter.
 
-![ADE L Setup](images/ade_setup.png)
+![ADE L Setup](simulation/ade_setup.png)
 
 **Figure 2:** ADE L setup showing the design variables, DC analysis, and output expressions.
 
@@ -255,7 +255,7 @@ $$
 \boxed{W=400\text{ nm to }2\ \mu\text{m}}
 $$
 
-![Parametric Sweep](images/parametric_sweep.png)
+![Parametric Sweep](simulation/parametric_sweep.png)
 
 **Figure 3:** Parametric sweep setup for \(V_{DS}\) and transistor width \(W\).
 
