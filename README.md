@@ -531,7 +531,7 @@ Indian Institute of Technology Bhilai
 
 ### Technical Skills Demonstrated
 
-`Cadence Virtuoso` · `Cadence ADE L` · `CMOS 180nm` · `Analog IC Design` · `MOSFET Characterization` · `gm/ID Methodology` · `Transistor Sizing`
+`Cadence Virtuoso` · `Cadence ADE L` · `CMOS 180nm` · `Analog IC Design` · `MOSFET Characterization` · `$g_m/I_D$ Methodology` · `Transistor Sizing`
 
 ---
 
@@ -543,4 +543,4 @@ Indian Institute of Technology Bhilai
 
 **Technology:** 180 nm CMOS
 
-**Primary Methodology:** \(g_m/I_D\) Lookup-Table Method
+**Primary Methodology:** $g_m/I_D$ Lookup-Table Method
