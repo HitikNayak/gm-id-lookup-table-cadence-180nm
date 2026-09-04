@@ -319,16 +319,16 @@ The generated simulation data can be organized into a lookup table containing pa
 
 | Parameter   | Description                 |
 | ----------- | --------------------------- |
-| \(V_{GS}\)  | Gate-to-source voltage      |
-| \(V_{DS}\)  | Drain-to-source voltage     |
-| \(I_D\)     | Drain current               |
-| \(g_m\)     | Transconductance            |
-| \(V_{TH}\)  | Threshold voltage           |
-| \(V_{OV}\)  | Overdrive voltage           |
-| \(g_m/I_D\) | Transconductance efficiency |
-| \(I_D/W\)   | Normalized drain current    |
-| \(W\)       | Transistor width            |
-| \(L\)       | Channel length              |
+| $V_{GS}$  | Gate-to-source voltage      |
+| $V_{DS}$  | Drain-to-source voltage     |
+| $I_D$     | Drain current               |
+| $g_m$     | Transconductance            |
+| $V_{TH}$  | Threshold voltage           |
+| $V_{OV}$  | Overdrive voltage           |
+| $g_m/I_D$ | Transconductance efficiency |
+| $I_D/W$   | Normalized drain current    |
+| W         | Transistor width            |
+| L         | Channel length              |
 
 The lookup table is used to select the transistor operating point and determine the required transistor dimensions.
 
@@ -531,7 +531,7 @@ Indian Institute of Technology Bhilai
 
 ### Technical Skills Demonstrated
 
-`Cadence Virtuoso` · `Cadence ADE L` · `CMOS 180nm` · `Analog IC Design` · `MOSFET Characterization` · ` $$g_m/I_D$$ Methodology` · `Transistor Sizing`
+`Cadence Virtuoso` · `Cadence ADE L` · `CMOS 180nm` · `Analog IC Design` · `MOSFET Characterization` · `g_m/I_D Methodology` · `Transistor Sizing`
 
 ---
 
