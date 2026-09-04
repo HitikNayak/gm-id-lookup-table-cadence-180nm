@@ -336,86 +336,96 @@ The lookup table is used to select the transistor operating point and determine 
 
 # 9. Bias Point Selection
 
-A target value of
+A target value of $g_m/I_D = 15~\mathrm{V^{-1}}$ was selected from the generated lookup table.
 
-\[
-\boxed{\left(\frac{g_m}{I_D}\right)_{\text{target}}=15~\mathrm{V^{-1}}}
-\]
-
-was selected from the generated \(g_m/I_D\) lookup table. The corresponding transistor operating point obtained from the simulation is shown below.
+The corresponding transistor operating point obtained from the simulation is shown below.
 
 | Parameter | Selected Value |
 |---|---:|
-| Target \(g_m/I_D\) | \(15~\mathrm{V^{-1}}\) |
-| Actual \(g_m/I_D\) | \(15.17~\mathrm{V^{-1}}\) |
-| Transistor Width \(W\) | \(0.4~\mu\mathrm{m}\) |
-| Channel Length \(L\) | \(0.18~\mu\mathrm{m}\) |
-| \(W/L\) | \(2.22\) |
-| Gate-to-Source Voltage \(V_{GS}\) | \(0.46~\mathrm{V}\) |
-| Drain-to-Source Voltage \(V_{DS}\) | \(1.8~\mathrm{V}\) |
-| Drain Current \(I_D\) | \(3.46~\mu\mathrm{A}\) |
-| Transconductance \(g_m\) | \(52.4~\mu\mathrm{S}\) |
-| Threshold Voltage \(V_{TH}\) | \(0.482~\mathrm{V}\) |
-| Overdrive Voltage \(V_{OV}\) | \(-22~\mathrm{mV}\) |
-| Normalized Current \(I_D/W\) | \(8.649~\mu\mathrm{A}/\mu\mathrm{m}\) |
+| Target $g_m/I_D$ | $15~\mathrm{V^{-1}}$ |
+| Actual $g_m/I_D$ | $15.17~\mathrm{V^{-1}}$ |
+| Transistor Width $W$ | $0.4~\mu\mathrm{m}$ |
+| Channel Length $L$ | $0.18~\mu\mathrm{m}$ |
+| $W/L$ | $2.22$ |
+| Gate-to-Source Voltage $V_{GS}$ | $0.46~\mathrm{V}$ |
+| Drain-to-Source Voltage $V_{DS}$ | $1.8~\mathrm{V}$ |
+| Drain Current $I_D$ | $3.46~\mu\mathrm{A}$ |
+| Transconductance $g_m$ | $52.4~\mu\mathrm{S}$ |
+| Threshold Voltage $V_{TH}$ | $0.482~\mathrm{V}$ |
+| Overdrive Voltage $V_{OV}$ | $-22~\mathrm{mV}$ |
+| Normalized Current $I_D/W$ | $8.649~\mu\mathrm{A}/\mu\mathrm{m}$ |
 
 ## Verification
 
-The obtained \(g_m/I_D\) value is verified using
+The obtained $g_m/I_D$ value is verified using
 
-\[
+$$
 \frac{g_m}{I_D}
 =
-\frac{52.4~\mu\mathrm{S}}
-{3.46~\mu\mathrm{A}}
-\]
+\frac{52.4~\mu\mathrm{S}}{3.46~\mu\mathrm{A}}
+\approx 15.17~\mathrm{V^{-1}}
+$$
 
-\[
-\boxed{\frac{g_m}{I_D}\approx15.17~\mathrm{V^{-1}}}
-\]
+which is close to the target value:
 
-which is close to the target value of
+$$
+\boxed{\frac{g_m}{I_D}=15~\mathrm{V^{-1}}}
+$$
 
-\[
-\boxed{15~\mathrm{V^{-1}}}
-\]
+### Overdrive Voltage
 
-The overdrive voltage obtained from the simulation is
+The overdrive voltage is calculated as
 
-\[
+$$
 V_{OV}=V_{GS}-V_{TH}
-\]
+$$
 
-\[
+Substituting the simulated values:
+
+$$
 V_{OV}=0.46-0.482
-\]
+$$
 
-\[
+Therefore,
+
+$$
 \boxed{V_{OV}=-0.022~\mathrm{V}=-22~\mathrm{mV}}
-\]
+$$
 
-Therefore, the selected bias point is:
+### Selected Bias Point
 
-\[
+The selected bias point is:
+
+$$
 \boxed{
-V_{GS}=0.46~\mathrm{V},\quad
-V_{DS}=1.8~\mathrm{V},\quad
+V_{GS}=0.46~\mathrm{V},\qquad
+V_{DS}=1.8~\mathrm{V},\qquad
 I_D=3.46~\mu\mathrm{A}
 }
-\]
+$$
 
-with
+with transistor dimensions:
 
-\[
+$$
 \boxed{
-W=0.4~\mu\mathrm{m},\quad
-L=0.18~\mu\mathrm{m},\quad
-g_m=52.4~\mu\mathrm{S}
+W=0.4~\mu\mathrm{m},\qquad
+L=0.18~\mu\mathrm{m}
 }
-\]
+$$
 
-The actual \(g_m/I_D\) of \(15.17~\mathrm{V^{-1}}\) closely matches the target value of \(15~\mathrm{V^{-1}}\), demonstrating the use of the lookup table for selecting the transistor bias point.
+and transconductance:
 
+$$
+\boxed{g_m=52.4~\mu\mathrm{S}}
+$$
+
+The resulting value of
+
+$$
+\boxed{\frac{g_m}{I_D}=15.17~\mathrm{V^{-1}}}
+$$
+
+closely matches the target value of $15~\mathrm{V^{-1}}$.
 ---
 
 # 10. Key Observations
