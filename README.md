@@ -61,7 +61,7 @@ Two parameters were varied:
 
 ### Transconductance
 
-The transconductance \(g_m\) represents how effectively the gate voltage controls the drain current.
+The transconductance $$ g_m $$ represents how effectively the gate voltage controls the drain current.
 
 ### Overdrive Voltage
 
@@ -73,8 +73,8 @@ $$
 
 where:
 
-* V_{GS} = Gate-to-source voltage
-* V_{TH} = Threshold voltage
+* $$ V_{GS} $$ = Gate-to-source voltage
+* $$ V_{TH} $$ = Threshold voltage
 
 ### gm/ID
 
