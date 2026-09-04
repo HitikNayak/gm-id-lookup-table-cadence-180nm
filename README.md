@@ -299,8 +299,8 @@ $$
 
 The curve can be used to:
 
-1. Select a desired \(g_m/I_D\) value.
-2. Obtain the corresponding normalized current \(I_D/W\).
+1. Select a desired $g_m/I_D$ value.
+2. Obtain the corresponding normalized current $I_D/W$.
 3. Calculate the required transistor width.
 
 The transistor width can be calculated using
@@ -361,7 +361,7 @@ The obtained $g_m/I_D$ value is verified using
 
 $g_m/I_D$
 =
-\frac{52.4~\mu\mathrm{S}}{3.46~\mu\mathrm{A}}
+$$\frac{52.4~\mu\mathrm{S}}{3.46~\mu\mathrm{A}}
 \approx 15.17~\mathrm{V^{-1}}
 $$
 
