@@ -334,7 +334,91 @@ The lookup table is used to select the transistor operating point and determine 
 
 ---
 
-# 9. Key Observations
+# 9. Bias Point Selection
+
+A target value of
+
+\[
+\boxed{\left(\frac{g_m}{I_D}\right)_{\text{target}}=15~\mathrm{V^{-1}}}
+\]
+
+was selected from the generated \(g_m/I_D\) lookup table. The corresponding transistor operating point obtained from the simulation is shown below.
+
+| Parameter | Selected Value |
+|---|---:|
+| Target \(g_m/I_D\) | \(15~\mathrm{V^{-1}}\) |
+| Actual \(g_m/I_D\) | \(15.17~\mathrm{V^{-1}}\) |
+| Transistor Width \(W\) | \(0.4~\mu\mathrm{m}\) |
+| Channel Length \(L\) | \(0.18~\mu\mathrm{m}\) |
+| \(W/L\) | \(2.22\) |
+| Gate-to-Source Voltage \(V_{GS}\) | \(0.46~\mathrm{V}\) |
+| Drain-to-Source Voltage \(V_{DS}\) | \(1.8~\mathrm{V}\) |
+| Drain Current \(I_D\) | \(3.46~\mu\mathrm{A}\) |
+| Transconductance \(g_m\) | \(52.4~\mu\mathrm{S}\) |
+| Threshold Voltage \(V_{TH}\) | \(0.482~\mathrm{V}\) |
+| Overdrive Voltage \(V_{OV}\) | \(-22~\mathrm{mV}\) |
+| Normalized Current \(I_D/W\) | \(8.649~\mu\mathrm{A}/\mu\mathrm{m}\) |
+
+## Verification
+
+The obtained \(g_m/I_D\) value is verified using
+
+\[
+\frac{g_m}{I_D}
+=
+\frac{52.4~\mu\mathrm{S}}
+{3.46~\mu\mathrm{A}}
+\]
+
+\[
+\boxed{\frac{g_m}{I_D}\approx15.17~\mathrm{V^{-1}}}
+\]
+
+which is close to the target value of
+
+\[
+\boxed{15~\mathrm{V^{-1}}}
+\]
+
+The overdrive voltage obtained from the simulation is
+
+\[
+V_{OV}=V_{GS}-V_{TH}
+\]
+
+\[
+V_{OV}=0.46-0.482
+\]
+
+\[
+\boxed{V_{OV}=-0.022~\mathrm{V}=-22~\mathrm{mV}}
+\]
+
+Therefore, the selected bias point is:
+
+\[
+\boxed{
+V_{GS}=0.46~\mathrm{V},\quad
+V_{DS}=1.8~\mathrm{V},\quad
+I_D=3.46~\mu\mathrm{A}
+}
+\]
+
+with
+
+\[
+\boxed{
+W=0.4~\mu\mathrm{m},\quad
+L=0.18~\mu\mathrm{m},\quad
+g_m=52.4~\mu\mathrm{S}
+}
+\]
+
+The actual \(g_m/I_D\) of \(15.17~\mathrm{V^{-1}}\) closely matches the target value of \(15~\mathrm{V^{-1}}\), demonstrating the use of the lookup table for selecting the transistor bias point.
+
+---
+
+# 10. Key Observations
 
 The major observations from the simulation are:
 
@@ -346,7 +430,7 @@ The major observations from the simulation are:
 
 ---
 
-# 10. Applications
+# 11. Applications
 
 The \(g_m/I_D\) lookup-table methodology can be applied to:
 
@@ -361,7 +445,7 @@ The \(g_m/I_D\) lookup-table methodology can be applied to:
 
 ---
 
-# 11. Repository Structure
+# 12. Repository Structure
 
 ```text
 gm-id-lookup-table-cadence-180nm/
@@ -384,11 +468,15 @@ gm-id-lookup-table-cadence-180nm/
 │
 └── report/
     └── GM_ID_Lookup_Table_180nm_CMOS_Cadence_Virtuoso.pdf
+│
+└──biasing_point/
+    └── biasing_point.png
+
 ```
 
 ---
 
-# 12. Software and Tools
+# 13. Software and Tools
 
 * **Cadence Virtuoso**
 * **Cadence ADE L**
@@ -397,7 +485,7 @@ gm-id-lookup-table-cadence-180nm/
 
 ---
 
-# 13. Result
+# 14. Result
 
 The \(g_m/I_D\) lookup curves were successfully generated using **Cadence Virtuoso with 180 nm CMOS technology**.
 
@@ -417,7 +505,7 @@ were obtained using a DC sweep step of 10 mV.
 
 ---
 
-# 14. Conclusion
+# 15. Conclusion
 
 A \(g_m/I_D\)-based lookup table was successfully developed using **Cadence Virtuoso and 180 nm CMOS technology**.
 
