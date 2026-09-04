@@ -186,7 +186,7 @@ The test circuit was simulated using **Cadence ADE L**.
 
 ### MOS Transistor Test Circuit
 
-![MOS Transistor Test Circuit](images/mos_test_circuit.png)
+![MOS Transistor Test Circuit](schematic/mos_test_circuit.png)
 
 **Figure 1:** MOS transistor test circuit used for generating the \(g_m/I_D\) lookup table.
 
